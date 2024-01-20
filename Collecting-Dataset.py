@@ -1,9 +1,9 @@
 import cv2, os
-haar_file = 'haarcascade_forntalface_default.xml'
+haar_file = 'haarcascade_frontalface_default.xml'
 datasets = 'datasets'
 sub_data = 'Daveram'
 
-path = os.path.join(datasets,sub_data)
+path = os.path.join("dataset",sub_data)
 if not os.path.isdir(path):
     os.mkdir(path)
 (width,height) = (130,100)
